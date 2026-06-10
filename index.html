@@ -1,9 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BookHub – Used Books at 50% Off for Students</title>
+
+<!-- ── PRIMARY SEO ───────────────────────────── -->
+<title>BookHub India – Buy &amp; Rent Used Textbooks at 50% Off | Best Deals for Students</title>
+<meta name="description" content="Buy or rent used textbooks at minimum 50% off. Engineering, Medical, MBA, Science &amp; competitive exam books available pan-India. India's most affordable platform for students. Order today!">
+<meta name="keywords" content="used books India, buy textbooks online India, rent textbooks India, cheap textbooks students, engineering books India, medical textbooks India, MBA books India, second hand books, UPSC books, affordable academic books Mumbai">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="BookHub India">
+<meta name="language" content="en-IN">
+<meta name="revisit-after" content="7 days">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Mumbai, Maharashtra, India">
+<link rel="canonical" href="https://www.bookhub.in/">
+
+<!-- ── OPEN GRAPH ─────────────────────────────── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bookhub.in/">
+<meta property="og:title" content="BookHub India – Used Textbooks at 50% Off for Students">
+<meta property="og:description" content="Buy or rent used textbooks at minimum 50% off. Engineering, Medical, MBA books. Pan-India delivery. Order today!">
+<meta property="og:image" content="https://www.bookhub.in/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="BookHub India">
+
+<!-- ── TWITTER CARD ───────────────────────────── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BookHub India – Buy &amp; Rent Textbooks at 50% Off">
+<meta name="twitter:description" content="India's most affordable platform for used academic books. Engineering, Medical, MBA books at half price. Pan-India delivery!">
+<meta name="twitter:image" content="https://www.bookhub.in/assets/og-image.jpg">
+<meta name="theme-color" content="#1e40af">
+
+<!-- ── JSON-LD STRUCTURED DATA ───────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "url": "https://www.bookhub.in/",
+      "name": "BookHub India",
+      "description": "Buy and rent used textbooks at minimum 50% off for Indian students",
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://www.bookhub.in/search?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BookStore",
+      "name": "BookHub India",
+      "url": "https://www.bookhub.in/",
+      "description": "India's most affordable platform for buying and renting used textbooks. Engineering, Medical, MBA, Science books at minimum 50% off.",
+      "telephone": "+91-1800-266-5482",
+      "email": "support@bookhub.in",
+      "foundingDate": "2020",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Education Lane, Andheri East",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400069",
+        "addressCountry": "IN"
+      },
+      "areaServed": "IN",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Credit Card, Debit Card, Net Banking",
+      "priceRange": "₹₹",
+      "sameAs": [
+        "https://www.facebook.com/bookhubindia",
+        "https://www.instagram.com/bookhubindia",
+        "https://twitter.com/bookhubindia"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What discount do I get on BookHub India?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Every book on BookHub India is at minimum 50% off. Students with verified college email get an additional 10% discount." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I rent textbooks at BookHub India?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes! Rent textbooks starting from ₹999/month. Semester and annual rental plans available for all major textbooks." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I place an order on BookHub India?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Add books to your cart and click 'Place Order by Email', or use the WhatsApp button. We confirm availability and pricing within 24 hours." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does BookHub India deliver across India?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, BookHub India delivers pan-India. Free shipping on all orders above ₹999." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,86 +118,105 @@ tailwind.config = {
 </script>
 <style>
 ::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.25); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,.25); border-radius: 4px; }
 
 /* Cart sidebar */
-#cart-sidebar { transform: translateX(100%); transition: transform 0.3s ease; }
+#cart-sidebar { transform: translateX(100%); transition: transform .3s ease; }
 #cart-sidebar.open { transform: translateX(0); }
-#cart-overlay { opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+#cart-overlay { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
 #cart-overlay.open { opacity: 1; pointer-events: all; }
 
 /* Mobile menu */
-#mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+#mobile-menu { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
 #mobile-menu.open { max-height: 600px; }
 
 /* Toast */
-#toast { transform: translateY(80px); opacity: 0; transition: all 0.3s ease; pointer-events: none; }
+#toast { transform: translateY(80px); opacity: 0; transition: all .3s ease; pointer-events: none; }
 #toast.show { transform: translateY(0); opacity: 1; }
 
 /* Tab active */
 .tab-btn.active { background-color: #1e40af; color: #fff; }
 
-/* Input error */
+/* Validation */
 .field-error { border-color: #ef4444 !important; }
-.err-msg { display: none; color: #ef4444; font-size: 0.72rem; margin-top: 3px; }
+.err-msg { display: none; color: #ef4444; font-size: .72rem; margin-top: 3px; }
 .err-msg.show { display: block; }
+
+/* WhatsApp float */
+#wa-float {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 39;
+  background: #25D366; color: #fff; width: 54px; height: 54px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.5); transition: transform .2s;
+  text-decoration: none; font-size: 1.5rem;
+}
+#wa-float:hover { transform: scale(1.1); }
 </style>
 </head>
 <body class="bg-white">
 
-<!-- ── TOAST ─────────────────────────────────── -->
-<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[9999]">
+<!-- ── TOAST ────────────────────────────────── -->
+<div id="toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[9999]">
   <div class="bg-gray-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 text-sm whitespace-nowrap">
-    <i class="ri-checkbox-circle-fill text-green-400 text-base"></i>
+    <i class="ri-checkbox-circle-fill text-green-400"></i>
     <span id="toast-msg">Added to cart!</span>
   </div>
 </div>
+
+<!-- ── WHATSAPP FLOAT ────────────────────────── -->
+<a id="wa-float" href="https://wa.me/917000000000?text=Hi%20BookHub!%20I%27d%20like%20to%20order%20some%20books."
+   target="_blank" rel="noopener noreferrer" aria-label="Order via WhatsApp">
+  <i class="ri-whatsapp-line"></i>
+</a>
 
 <!-- ── CART OVERLAY ───────────────────────────── -->
 <div id="cart-overlay" class="fixed inset-0 bg-black/50 z-40"></div>
 
 <!-- ── CART SIDEBAR ───────────────────────────── -->
-<div id="cart-sidebar" class="fixed right-0 top-0 h-full w-full max-w-sm bg-white shadow-2xl z-50 flex flex-col">
+<div id="cart-sidebar" class="fixed right-0 top-0 h-full w-full max-w-sm bg-white shadow-2xl z-50 flex flex-col" role="dialog" aria-label="Shopping cart">
   <div class="flex items-center justify-between px-5 py-4 border-b border-gray-200">
-    <h3 class="text-lg font-bold text-gray-900">Your Cart</h3>
-    <button id="close-cart" class="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-gray-600 rounded-full hover:bg-gray-100 transition">
+    <div>
+      <h2 class="text-lg font-bold text-gray-900">Your Cart</h2>
+      <p class="text-xs text-gray-400 mt-0.5">Review items before ordering</p>
+    </div>
+    <button id="close-cart" aria-label="Close cart" class="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-gray-700 rounded-full hover:bg-gray-100 transition">
       <i class="ri-close-line text-xl"></i>
     </button>
   </div>
 
   <div class="flex-1 overflow-y-auto px-5 py-4">
     <p id="cart-empty" class="text-center text-gray-400 text-sm mt-12">
-      <i class="ri-shopping-cart-line text-4xl block mb-3"></i>
+      <i class="ri-shopping-cart-line text-4xl block mb-3 text-gray-300"></i>
       Your cart is empty.<br>Browse books and add to cart!
     </p>
     <div id="cart-items" class="space-y-4"></div>
   </div>
 
   <div id="cart-footer" class="hidden px-5 py-4 border-t border-gray-200 bg-gray-50">
-    <div class="flex justify-between items-center mb-4">
+    <div class="flex justify-between items-center mb-0.5">
       <span class="text-sm text-gray-600 font-medium">Estimated Total</span>
-      <span id="cart-total" class="text-xl font-bold text-gray-900">$0.00</span>
+      <span id="cart-total" class="text-xl font-bold text-gray-900">₹0</span>
     </div>
-    <p class="text-xs text-gray-500 mb-3">Final pricing confirmed via email · Free shipping over $25</p>
-    <button id="cart-checkout-btn" class="w-full bg-primary text-white py-3 rounded-button font-semibold hover:bg-blue-700 transition text-sm">
-      Place Order by Email
+    <p class="text-xs text-gray-400 mb-3">✓ Free delivery above ₹999 &nbsp;·&nbsp; ✓ Price confirmed via email</p>
+    <button id="cart-checkout-btn" class="w-full bg-primary text-white py-3 rounded-button font-semibold hover:bg-blue-700 transition text-sm flex items-center justify-center gap-2">
+      <i class="ri-mail-send-line"></i> Place Order by Email
     </button>
-    <button id="clear-cart-btn" class="w-full mt-2 text-sm text-gray-500 hover:text-red-500 transition">
-      Clear cart
+    <button id="wa-cart-btn" class="w-full mt-2 bg-[#25D366] text-white py-2.5 rounded-button font-semibold text-sm flex items-center justify-center gap-2 hover:bg-[#1ebe5a] transition">
+      <i class="ri-whatsapp-line"></i> Order via WhatsApp
     </button>
+    <button id="clear-cart-btn" class="w-full mt-2 text-xs text-gray-400 hover:text-red-500 transition py-1">Clear cart</button>
   </div>
 </div>
 
 <!-- ── HEADER ─────────────────────────────────── -->
 <header class="bg-white shadow-sm sticky top-0 z-30">
   <div class="bg-primary text-white py-2 text-center text-xs md:text-sm font-medium px-4">
-    Student Discount — Register with .edu email for extra savings!
+    🎓 Student Discount — Verify with college email for extra savings! &nbsp;|&nbsp; 🚚 Free delivery above ₹999
   </div>
-  <nav class="px-4 md:px-8 py-3 md:py-4">
+  <nav class="px-4 md:px-8 py-3 md:py-4" role="navigation" aria-label="Main navigation">
     <div class="flex items-center justify-between">
-      <div class="font-['Pacifico'] text-2xl md:text-3xl text-primary">BookHub</div>
+      <a href="/" class="font-['Pacifico'] text-2xl md:text-3xl text-primary" aria-label="BookHub India Home">BookHub</a>
 
-      <!-- Desktop links -->
       <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
         <a href="#" class="text-gray-700 hover:text-primary transition">Home</a>
         <a href="#" class="text-gray-700 hover:text-primary transition">Buy Books</a>
@@ -106,34 +227,29 @@ tailwind.config = {
         <a href="#" class="text-gray-700 hover:text-primary transition">Contact</a>
       </div>
 
-      <!-- Icons -->
       <div class="flex items-center gap-1 md:gap-2">
-        <button class="w-9 h-9 flex items-center justify-center text-gray-700 hover:text-primary transition">
-          <i class="ri-search-line text-xl"></i>
-        </button>
-        <button class="hidden md:flex w-9 h-9 items-center justify-center text-gray-700 hover:text-primary transition">
-          <i class="ri-user-line text-xl"></i>
-        </button>
-        <button id="open-cart" class="relative w-9 h-9 flex items-center justify-center text-gray-700 hover:text-primary transition">
+        <button aria-label="Search" class="w-9 h-9 flex items-center justify-center text-gray-700 hover:text-primary transition"><i class="ri-search-line text-xl"></i></button>
+        <button aria-label="Account" class="hidden md:flex w-9 h-9 items-center justify-center text-gray-700 hover:text-primary transition"><i class="ri-user-line text-xl"></i></button>
+        <button id="open-cart" aria-label="Open cart" class="relative w-9 h-9 flex items-center justify-center text-gray-700 hover:text-primary transition">
           <i class="ri-shopping-cart-line text-xl"></i>
           <span id="cart-count" class="hidden absolute -top-0.5 -right-0.5 bg-secondary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
         </button>
-        <button id="hamburger" class="lg:hidden w-9 h-9 flex items-center justify-center text-gray-700 hover:text-primary transition">
+        <button id="hamburger" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden w-9 h-9 flex items-center justify-center text-gray-700 hover:text-primary transition">
           <i id="hamburger-icon" class="ri-menu-line text-xl"></i>
         </button>
       </div>
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="lg:hidden">
+    <div id="mobile-menu" class="lg:hidden" role="menu">
       <div class="pt-4 pb-2 border-t border-gray-100 mt-3 flex flex-col gap-0.5">
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Home</a>
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Buy Books</a>
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Rent Books</a>
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Categories</a>
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Student Discounts</a>
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">About Us</a>
-        <a href="#" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Contact</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Home</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Buy Books</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Rent Books</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Categories</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Student Discounts</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">About Us</a>
+        <a href="#" role="menuitem" class="py-2.5 px-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition">Contact</a>
         <div class="flex gap-2 mt-3 pt-3 border-t border-gray-100">
           <button class="flex-1 bg-white text-primary border-2 border-primary py-2.5 rounded-button text-sm font-semibold">Sign In</button>
           <button class="popup-trigger flex-1 bg-secondary text-white py-2.5 rounded-button text-sm font-semibold">Order by Email</button>
@@ -143,20 +259,32 @@ tailwind.config = {
   </nav>
 </header>
 
+<!-- ── TRUST STRIP ────────────────────────────── -->
+<div class="bg-blue-50 border-b border-blue-100" role="complementary" aria-label="Trust badges">
+  <div class="max-w-7xl mx-auto px-4 py-2.5">
+    <ul class="flex items-center justify-center flex-wrap gap-3 md:gap-8 text-xs text-gray-600 list-none">
+      <li class="flex items-center gap-1.5"><i class="ri-truck-line text-primary" aria-hidden="true"></i> Free delivery above ₹999</li>
+      <li class="hidden sm:flex items-center gap-1.5"><i class="ri-shield-check-line text-primary" aria-hidden="true"></i> Quality guaranteed</li>
+      <li class="flex items-center gap-1.5"><i class="ri-bank-card-line text-primary" aria-hidden="true"></i> UPI &amp; COD accepted</li>
+      <li class="hidden sm:flex items-center gap-1.5"><i class="ri-refresh-line text-primary" aria-hidden="true"></i> Easy 7-day returns</li>
+      <li class="flex items-center gap-1.5"><i class="ri-map-pin-line text-primary" aria-hidden="true"></i> Pan-India delivery</li>
+    </ul>
+  </div>
+</div>
+
 <!-- ── HERO ───────────────────────────────────── -->
 <section class="relative min-h-[420px] md:h-[600px] flex items-center overflow-hidden"
-  style="background: linear-gradient(to right, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.92) 55%, rgba(255,255,255,0.2) 100%),
+  style="background: linear-gradient(to right, rgba(255,255,255,.97) 0%, rgba(255,255,255,.92) 55%, rgba(255,255,255,.2) 100%),
          url('https://readdy.ai/api/search-image?query=Modern%20minimalist%20bookstore%20interior%20with%20warm%20natural%20lighting%20streaming%20through%20large%20windows%2C%20wooden%20bookshelves%20filled%20with%20colorful%20books%20on%20left%20side%20fading%20to%20soft%20white%20background%20on%20right%2C%20clean%20contemporary%20design%2C%20peaceful%20reading%20atmosphere%2C%20professional%20photography%2C%20high%20quality%2C%20architectural%20photography%20style&width=1920&height=600&seq=hero001&orientation=landscape')
          center/cover no-repeat;">
   <div class="w-full px-4 md:px-8 max-w-7xl mx-auto py-16 md:py-0">
     <div class="max-w-xl">
-      <div class="inline-block bg-secondary text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold mb-4 md:mb-6">
-        Minimum 50% OFF on Every Book
-      </div>
-      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-        Used Books at 50% Off — Perfect for Students!
+      <div class="inline-block bg-secondary text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold mb-4">Minimum 50% OFF — Every Book, Every Day</div>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+        Used Textbooks at 50% Off — Perfect for Indian Students!
       </h1>
-      <p class="text-base md:text-xl text-gray-600 mb-6 md:mb-8">Buy or Rent Textbooks, Novels, and More</p>
+      <p class="text-base md:text-xl text-gray-600 mb-2">Buy or Rent Textbooks, Novels &amp; More</p>
+      <p class="text-sm text-green-700 font-semibold mb-6 md:mb-8">💰 Students save an average of <strong>₹15,000+</strong> per semester</p>
       <div class="flex flex-col sm:flex-row gap-3">
         <button class="bg-primary text-white px-7 py-3 md:py-4 rounded-button font-semibold hover:bg-blue-700 transition text-sm md:text-base">Browse Books</button>
         <button class="popup-trigger bg-white text-primary border-2 border-primary px-7 py-3 md:py-4 rounded-button font-semibold hover:bg-blue-50 transition text-sm md:text-base">Order by Email</button>
@@ -166,22 +294,22 @@ tailwind.config = {
 </section>
 
 <!-- ── SEARCH ─────────────────────────────────── -->
-<section class="py-10 md:py-16 bg-gradient-to-b from-blue-50 to-white">
+<section class="py-10 md:py-16 bg-gradient-to-b from-blue-50 to-white" aria-label="Book search">
   <div class="max-w-6xl mx-auto px-4 md:px-8">
     <div class="bg-white rounded-2xl shadow-lg p-4 md:p-8">
       <div class="flex flex-col md:flex-row gap-3">
         <div class="flex-1">
-          <input type="text" placeholder="Search by title, author, ISBN, or subject…"
+          <input type="text" placeholder="Search by title, author, ISBN, or subject…" aria-label="Search books"
             class="w-full px-4 md:px-6 py-3 md:py-4 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary">
         </div>
         <div class="flex gap-2">
-          <select class="flex-1 md:flex-none px-3 py-3 border border-gray-300 rounded-lg bg-white text-gray-700 text-sm focus:outline-none focus:border-primary">
+          <select aria-label="Filter by category" class="flex-1 md:flex-none px-3 py-3 border border-gray-300 rounded-lg bg-white text-gray-700 text-sm focus:outline-none focus:border-primary">
             <option>All Categories</option>
             <option>Textbooks</option><option>Engineering</option><option>Medical</option>
-            <option>Business</option><option>Literature</option><option>Science</option>
-            <option>Arts</option><option>Competitive Exams</option>
+            <option>Business / MBA</option><option>Literature</option><option>Science</option>
+            <option>Arts</option><option>UPSC / Competitive Exams</option>
           </select>
-          <select class="flex-1 md:flex-none px-3 py-3 border border-gray-300 rounded-lg bg-white text-gray-700 text-sm focus:outline-none focus:border-primary">
+          <select aria-label="Filter by condition" class="flex-1 md:flex-none px-3 py-3 border border-gray-300 rounded-lg bg-white text-gray-700 text-sm focus:outline-none focus:border-primary">
             <option>Any Condition</option><option>Like New</option><option>Good</option><option>Acceptable</option>
           </select>
         </div>
@@ -192,8 +320,8 @@ tailwind.config = {
         <button class="px-3 py-1.5 bg-gray-100 rounded-full text-xs text-gray-700 hover:bg-primary hover:text-white transition">Engineering Books</button>
         <button class="px-3 py-1.5 bg-gray-100 rounded-full text-xs text-gray-700 hover:bg-primary hover:text-white transition">Medical Books</button>
         <button class="px-3 py-1.5 bg-gray-100 rounded-full text-xs text-gray-700 hover:bg-primary hover:text-white transition">MBA Books</button>
+        <button class="px-3 py-1.5 bg-gray-100 rounded-full text-xs text-gray-700 hover:bg-primary hover:text-white transition">UPSC Books</button>
         <button class="px-3 py-1.5 bg-gray-100 rounded-full text-xs text-gray-700 hover:bg-primary hover:text-white transition">Novels</button>
-        <button class="px-3 py-1.5 bg-gray-100 rounded-full text-xs text-gray-700 hover:bg-primary hover:text-white transition">Law Books</button>
       </div>
     </div>
   </div>
@@ -203,12 +331,12 @@ tailwind.config = {
 <section class="py-10 md:py-12 bg-gradient-to-r from-blue-600 to-blue-700">
   <div class="max-w-6xl mx-auto px-4 md:px-8">
     <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
-      <div class="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full shrink-0">
+      <div class="w-14 h-14 flex items-center justify-center bg-white/20 rounded-full shrink-0" aria-hidden="true">
         <i class="ri-mail-line ri-2x text-white"></i>
       </div>
       <div class="flex-1">
-        <h3 class="text-lg md:text-2xl font-bold text-white mb-1">New in the Market — Order by Email</h3>
-        <p class="text-blue-100 text-sm md:text-base">Send us your book list and we'll reply with availability and pricing within 24 hours.</p>
+        <h2 class="text-lg md:text-2xl font-bold text-white mb-1">New in the Market — Order by Email</h2>
+        <p class="text-blue-100 text-sm md:text-base">Send us your book list and we'll reply with availability and pricing within 24 hours. Pan-India delivery.</p>
       </div>
       <button class="popup-trigger bg-secondary text-white px-6 md:px-8 py-3 md:py-4 rounded-button font-semibold hover:bg-yellow-600 transition text-sm md:text-base whitespace-nowrap shrink-0">
         Send Order Email
@@ -218,261 +346,268 @@ tailwind.config = {
 </section>
 
 <!-- ── CATEGORIES ─────────────────────────────── -->
-<section class="py-16 md:py-20">
+<section class="py-16 md:py-20" aria-labelledby="categories-heading">
   <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">Browse by Category</h2>
-    <p class="text-center text-gray-500 mb-10 text-sm md:text-base">Find exactly what you need from our extensive collection</p>
+    <h2 id="categories-heading" class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">Browse by Category</h2>
+    <p class="text-center text-gray-500 mb-10 text-sm md:text-base">Find exactly what you need from our extensive collection of used books</p>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-      <!-- Category card template -->
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-book-open-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
         <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Textbooks</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">2,847 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-calculator-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
         <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Engineering</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">1,523 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-heart-pulse-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
         <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Medical</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">1,892 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-briefcase-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
-        <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Business</h3>
+        <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Business / MBA</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">1,245 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-book-2-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
         <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Literature</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">3,156 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-flask-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
         <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Science</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">1,678 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
-          <i class="ri-palette-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
-        </div>
-        <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Arts</h3>
-        <p class="text-xs md:text-sm text-gray-500 mb-3">892 books</p>
-        <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
-      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center md:text-left">
-        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto md:mx-0">
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
           <i class="ri-trophy-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
         </div>
-        <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Competitive Exams</h3>
+        <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">UPSC &amp; Exams</h3>
         <p class="text-xs md:text-sm text-gray-500 mb-3">1,034 books</p>
         <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
-      </div>
+      </article>
+      <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 md:p-6 cursor-pointer group text-center">
+        <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-3 group-hover:bg-primary transition mx-auto" aria-hidden="true">
+          <i class="ri-palette-line text-xl md:text-3xl text-primary group-hover:text-white"></i>
+        </div>
+        <h3 class="text-sm md:text-lg font-bold text-gray-900 mb-1">Arts &amp; Design</h3>
+        <p class="text-xs md:text-sm text-gray-500 mb-3">892 books</p>
+        <button class="text-primary font-semibold text-xs md:text-sm hover:underline">Browse →</button>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- ── BOOKS SECTION ──────────────────────────── -->
-<section class="py-16 md:py-20 bg-gray-50">
+<section class="py-16 md:py-20 bg-gray-50" aria-labelledby="books-heading">
   <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <!-- Tabs (scrollable on small screens) -->
-    <div class="flex gap-2 mb-8 md:mb-12 overflow-x-auto pb-2 justify-start md:justify-center">
-      <button class="tab-btn active flex-shrink-0 px-5 md:px-8 py-2.5 rounded-button font-semibold text-sm" data-tab="bestsellers">Best Sellers</button>
-      <button class="tab-btn flex-shrink-0 px-5 md:px-8 py-2.5 bg-white text-gray-700 rounded-button font-semibold text-sm hover:bg-gray-100" data-tab="newarrivals">New Arrivals</button>
-      <button class="tab-btn flex-shrink-0 px-5 md:px-8 py-2.5 bg-white text-gray-700 rounded-button font-semibold text-sm hover:bg-gray-100" data-tab="recommended">Recommended</button>
+    <h2 id="books-heading" class="sr-only">Book Listings</h2>
+    <div class="flex gap-2 mb-8 md:mb-12 overflow-x-auto pb-2 justify-start md:justify-center" role="tablist">
+      <button class="tab-btn active flex-shrink-0 px-5 md:px-8 py-2.5 rounded-button font-semibold text-sm" role="tab" aria-selected="true" data-tab="bestsellers">Best Sellers</button>
+      <button class="tab-btn flex-shrink-0 px-5 md:px-8 py-2.5 bg-white text-gray-700 rounded-button font-semibold text-sm hover:bg-gray-100" role="tab" aria-selected="false" data-tab="newarrivals">New Arrivals</button>
+      <button class="tab-btn flex-shrink-0 px-5 md:px-8 py-2.5 bg-white text-gray-700 rounded-button font-semibold text-sm hover:bg-gray-100" role="tab" aria-selected="false" data-tab="recommended">Recommended</button>
     </div>
 
-    <!-- BEST SELLERS -->
-    <div id="bestsellers" class="tab-content">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+    <!-- BEST SELLERS ─────────────────────────── -->
+    <div id="bestsellers" class="tab-content" role="tabpanel">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Introduction%20to%20Algorithms%20computer%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book001&orientation=portrait"
-              alt="Introduction to Algorithms" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">60% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Introduction to Algorithms by Thomas H. Cormen — Used textbook at 60% off on BookHub India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">60% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Introduction to Algorithms</h3>
-            <p class="text-xs text-gray-500 mb-3">Thomas H. Cormen</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$45.99</span><span class="text-xs text-gray-400 line-through">$114.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $12/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Introduction to Algorithms" data-author="Thomas H. Cormen" data-price="$45.99" data-rent="$12/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Introduction to Algorithms" data-author="Thomas H. Cormen" data-price="$45.99" data-rent="$12/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Introduction to Algorithms</h3>
+            <p class="text-xs text-gray-500 mb-2">Thomas H. Cormen</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹3,849</span><span class="text-xs text-gray-400 line-through">₹9,649</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹999/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Introduction to Algorithms" data-author="Thomas H. Cormen" data-price="₹3,849" data-rent="₹999/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Introduction to Algorithms" data-author="Thomas H. Cormen" data-price="₹3,849" data-rent="₹999/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Organic%20Chemistry%20academic%20book%2C%20clean%20modern%20scientific%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book002&orientation=portrait"
-              alt="Organic Chemistry" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">55% OFF</div>
-            <span class="absolute top-3 left-3 bg-yellow-600 text-white px-2 py-1 rounded-full text-xs font-bold">Good</span>
+              alt="Organic Chemistry by Paula Yurkanis Bruice — Used textbook 55% off BookHub India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">55% OFF</div>
+            <span class="absolute top-2 left-2 bg-yellow-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Good</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Organic Chemistry</h3>
-            <p class="text-xs text-gray-500 mb-3">Paula Yurkanis Bruice</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$67.50</span><span class="text-xs text-gray-400 line-through">$149.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $18/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Organic Chemistry" data-author="Paula Yurkanis Bruice" data-price="$67.50" data-rent="$18/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Organic Chemistry" data-author="Paula Yurkanis Bruice" data-price="$67.50" data-rent="$18/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Organic Chemistry</h3>
+            <p class="text-xs text-gray-500 mb-2">Paula Yurkanis Bruice</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹5,649</span><span class="text-xs text-gray-400 line-through">₹12,549</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,499/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Organic Chemistry" data-author="Paula Yurkanis Bruice" data-price="₹5,649" data-rent="₹1,499/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Organic Chemistry" data-author="Paula Yurkanis Bruice" data-price="₹5,649" data-rent="₹1,499/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Calculus%20Early%20Transcendentals%20mathematics%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book003&orientation=portrait"
-              alt="Calculus" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">52% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Calculus Early Transcendentals by James Stewart — Used maths textbook India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">52% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Calculus: Early Transcendentals</h3>
-            <p class="text-xs text-gray-500 mb-3">James Stewart</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$86.40</span><span class="text-xs text-gray-400 line-through">$179.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $22/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Calculus: Early Transcendentals" data-author="James Stewart" data-price="$86.40" data-rent="$22/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Calculus: Early Transcendentals" data-author="James Stewart" data-price="$86.40" data-rent="$22/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Calculus: Early Transcendentals</h3>
+            <p class="text-xs text-gray-500 mb-2">James Stewart</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹7,249</span><span class="text-xs text-gray-400 line-through">₹15,099</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,849/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Calculus: Early Transcendentals" data-author="James Stewart" data-price="₹7,249" data-rent="₹1,849/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Calculus: Early Transcendentals" data-author="James Stewart" data-price="₹7,249" data-rent="₹1,849/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Campbell%20Biology%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book004&orientation=portrait"
-              alt="Campbell Biology" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">58% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Campbell Biology by Lisa A. Urry — Used biology textbook India 58% off"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">58% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Campbell Biology</h3>
-            <p class="text-xs text-gray-500 mb-3">Lisa A. Urry</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$75.60</span><span class="text-xs text-gray-400 line-through">$179.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $20/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Campbell Biology" data-author="Lisa A. Urry" data-price="$75.60" data-rent="$20/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Campbell Biology" data-author="Lisa A. Urry" data-price="$75.60" data-rent="$20/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Campbell Biology</h3>
+            <p class="text-xs text-gray-500 mb-2">Lisa A. Urry</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹6,349</span><span class="text-xs text-gray-400 line-through">₹15,099</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,649/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Campbell Biology" data-author="Lisa A. Urry" data-price="₹6,349" data-rent="₹1,649/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Campbell Biology" data-author="Lisa A. Urry" data-price="₹6,349" data-rent="₹1,649/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Principles%20of%20Economics%20business%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book005&orientation=portrait"
-              alt="Principles of Economics" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">50% OFF</div>
-            <span class="absolute top-3 left-3 bg-yellow-600 text-white px-2 py-1 rounded-full text-xs font-bold">Good</span>
+              alt="Principles of Economics by N. Gregory Mankiw — Used economics textbook India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">50% OFF</div>
+            <span class="absolute top-2 left-2 bg-yellow-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Good</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Principles of Economics</h3>
-            <p class="text-xs text-gray-500 mb-3">N. Gregory Mankiw</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$99.50</span><span class="text-xs text-gray-400 line-through">$199.00</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $25/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Principles of Economics" data-author="N. Gregory Mankiw" data-price="$99.50" data-rent="$25/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Principles of Economics" data-author="N. Gregory Mankiw" data-price="$99.50" data-rent="$25/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Principles of Economics</h3>
+            <p class="text-xs text-gray-500 mb-2">N. Gregory Mankiw</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹8,349</span><span class="text-xs text-gray-400 line-through">₹16,699</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹2,099/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Principles of Economics" data-author="N. Gregory Mankiw" data-price="₹8,349" data-rent="₹2,099/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Principles of Economics" data-author="N. Gregory Mankiw" data-price="₹8,349" data-rent="₹2,099/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Fundamentals%20of%20Physics%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book006&orientation=portrait"
-              alt="Fundamentals of Physics" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">54% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Fundamentals of Physics by David Halliday — Used physics book India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">54% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Fundamentals of Physics</h3>
-            <p class="text-xs text-gray-500 mb-3">David Halliday</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$82.80</span><span class="text-xs text-gray-400 line-through">$179.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $21/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Fundamentals of Physics" data-author="David Halliday" data-price="$82.80" data-rent="$21/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Fundamentals of Physics" data-author="David Halliday" data-price="$82.80" data-rent="$21/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Fundamentals of Physics</h3>
+            <p class="text-xs text-gray-500 mb-2">David Halliday</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹6,949</span><span class="text-xs text-gray-400 line-through">₹15,099</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,749/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Fundamentals of Physics" data-author="David Halliday" data-price="₹6,949" data-rent="₹1,749/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Fundamentals of Physics" data-author="David Halliday" data-price="₹6,949" data-rent="₹1,749/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Engineering%20Mechanics%20Statics%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book007&orientation=portrait"
-              alt="Engineering Mechanics" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">51% OFF</div>
-            <span class="absolute top-3 left-3 bg-yellow-600 text-white px-2 py-1 rounded-full text-xs font-bold">Good</span>
+              alt="Engineering Mechanics Statics by Russell C. Hibbeler — Used engineering book India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">51% OFF</div>
+            <span class="absolute top-2 left-2 bg-yellow-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Good</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Engineering Mechanics: Statics</h3>
-            <p class="text-xs text-gray-500 mb-3">Russell C. Hibbeler</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$73.50</span><span class="text-xs text-gray-400 line-through">$149.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $19/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Engineering Mechanics: Statics" data-author="Russell C. Hibbeler" data-price="$73.50" data-rent="$19/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Engineering Mechanics: Statics" data-author="Russell C. Hibbeler" data-price="$73.50" data-rent="$19/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Engineering Mechanics: Statics</h3>
+            <p class="text-xs text-gray-500 mb-2">Russell C. Hibbeler</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹6,149</span><span class="text-xs text-gray-400 line-through">₹12,549</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,599/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Engineering Mechanics: Statics" data-author="Russell C. Hibbeler" data-price="₹6,149" data-rent="₹1,599/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Engineering Mechanics: Statics" data-author="Russell C. Hibbeler" data-price="₹6,149" data-rent="₹1,599/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Microeconomics%20business%20economics%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book008&orientation=portrait"
-              alt="Microeconomics" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">53% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Microeconomics by Paul Krugman — Used economics textbook India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">53% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Microeconomics</h3>
-            <p class="text-xs text-gray-500 mb-3">Paul Krugman</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$84.60</span><span class="text-xs text-gray-400 line-through">$179.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $22/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Microeconomics" data-author="Paul Krugman" data-price="$84.60" data-rent="$22/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Microeconomics" data-author="Paul Krugman" data-price="$84.60" data-rent="$22/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Microeconomics</h3>
+            <p class="text-xs text-gray-500 mb-2">Paul Krugman</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹7,099</span><span class="text-xs text-gray-400 line-through">₹15,099</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,849/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Microeconomics" data-author="Paul Krugman" data-price="₹7,099" data-rent="₹1,849/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Microeconomics" data-author="Paul Krugman" data-price="₹7,099" data-rent="₹1,849/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
       <div class="text-center mt-8">
@@ -480,97 +615,101 @@ tailwind.config = {
       </div>
     </div>
 
-    <!-- NEW ARRIVALS -->
-    <div id="newarrivals" class="tab-content hidden">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+    <!-- NEW ARRIVALS ────────────────────────── -->
+    <div id="newarrivals" class="tab-content hidden" role="tabpanel">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Data%20Science%20Handbook%20computer%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book009&orientation=portrait"
-              alt="Data Science Handbook" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">55% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
-            <span class="absolute bottom-3 left-3 bg-secondary text-white px-2 py-1 rounded-full text-xs font-bold">NEW</span>
+              alt="Data Science Handbook by Jake VanderPlas — New arrival BookHub India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">55% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
+            <span class="absolute bottom-2 left-2 bg-secondary text-white px-2 py-0.5 rounded-full text-xs font-bold">NEW</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Data Science Handbook</h3>
-            <p class="text-xs text-gray-500 mb-3">Jake VanderPlas</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$53.99</span><span class="text-xs text-gray-400 line-through">$119.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $15/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Data Science Handbook" data-author="Jake VanderPlas" data-price="$53.99" data-rent="$15/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Data Science Handbook" data-author="Jake VanderPlas" data-price="$53.99" data-rent="$15/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Data Science Handbook</h3>
+            <p class="text-xs text-gray-500 mb-2">Jake VanderPlas</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹4,549</span><span class="text-xs text-gray-400 line-through">₹9,999</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,249/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Data Science Handbook" data-author="Jake VanderPlas" data-price="₹4,549" data-rent="₹1,249/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Data Science Handbook" data-author="Jake VanderPlas" data-price="₹4,549" data-rent="₹1,249/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Molecular%20Biology%20genetics%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book010&orientation=portrait"
-              alt="Molecular Biology" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">52% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
-            <span class="absolute bottom-3 left-3 bg-secondary text-white px-2 py-1 rounded-full text-xs font-bold">NEW</span>
+              alt="Molecular Biology of the Cell by Bruce Alberts — Used biology textbook India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">52% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
+            <span class="absolute bottom-2 left-2 bg-secondary text-white px-2 py-0.5 rounded-full text-xs font-bold">NEW</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Molecular Biology of the Cell</h3>
-            <p class="text-xs text-gray-500 mb-3">Bruce Alberts</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$91.20</span><span class="text-xs text-gray-400 line-through">$189.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $24/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Molecular Biology of the Cell" data-author="Bruce Alberts" data-price="$91.20" data-rent="$24/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Molecular Biology of the Cell" data-author="Bruce Alberts" data-price="$91.20" data-rent="$24/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Molecular Biology of the Cell</h3>
+            <p class="text-xs text-gray-500 mb-2">Bruce Alberts</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹7,649</span><span class="text-xs text-gray-400 line-through">₹15,999</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,999/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Molecular Biology of the Cell" data-author="Bruce Alberts" data-price="₹7,649" data-rent="₹1,999/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Molecular Biology of the Cell" data-author="Bruce Alberts" data-price="₹7,649" data-rent="₹1,999/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Digital%20Marketing%20business%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book011&orientation=portrait"
-              alt="Digital Marketing Strategy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">50% OFF</div>
-            <span class="absolute top-3 left-3 bg-yellow-600 text-white px-2 py-1 rounded-full text-xs font-bold">Good</span>
-            <span class="absolute bottom-3 left-3 bg-secondary text-white px-2 py-1 rounded-full text-xs font-bold">NEW</span>
+              alt="Digital Marketing Strategy by Simon Kingsnorth — Used MBA book India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">50% OFF</div>
+            <span class="absolute top-2 left-2 bg-yellow-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Good</span>
+            <span class="absolute bottom-2 left-2 bg-secondary text-white px-2 py-0.5 rounded-full text-xs font-bold">NEW</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Digital Marketing Strategy</h3>
-            <p class="text-xs text-gray-500 mb-3">Simon Kingsnorth</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$44.99</span><span class="text-xs text-gray-400 line-through">$89.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $12/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Digital Marketing Strategy" data-author="Simon Kingsnorth" data-price="$44.99" data-rent="$12/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Digital Marketing Strategy" data-author="Simon Kingsnorth" data-price="$44.99" data-rent="$12/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Digital Marketing Strategy</h3>
+            <p class="text-xs text-gray-500 mb-2">Simon Kingsnorth</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹3,799</span><span class="text-xs text-gray-400 line-through">₹7,499</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹999/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Digital Marketing Strategy" data-author="Simon Kingsnorth" data-price="₹3,799" data-rent="₹999/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Digital Marketing Strategy" data-author="Simon Kingsnorth" data-price="₹3,799" data-rent="₹999/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Artificial%20Intelligence%20machine%20learning%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book012&orientation=portrait"
-              alt="Artificial Intelligence" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">57% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
-            <span class="absolute bottom-3 left-3 bg-secondary text-white px-2 py-1 rounded-full text-xs font-bold">NEW</span>
+              alt="Artificial Intelligence A Modern Approach by Stuart Russell — Used AI textbook India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">57% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
+            <span class="absolute bottom-2 left-2 bg-secondary text-white px-2 py-0.5 rounded-full text-xs font-bold">NEW</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Artificial Intelligence: A Modern Approach</h3>
-            <p class="text-xs text-gray-500 mb-3">Stuart Russell</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$68.80</span><span class="text-xs text-gray-400 line-through">$159.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $18/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Artificial Intelligence: A Modern Approach" data-author="Stuart Russell" data-price="$68.80" data-rent="$18/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Artificial Intelligence: A Modern Approach" data-author="Stuart Russell" data-price="$68.80" data-rent="$18/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">AI: A Modern Approach</h3>
+            <p class="text-xs text-gray-500 mb-2">Stuart Russell</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹5,799</span><span class="text-xs text-gray-400 line-through">₹13,449</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,499/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Artificial Intelligence: A Modern Approach" data-author="Stuart Russell" data-price="₹5,799" data-rent="₹1,499/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Artificial Intelligence: A Modern Approach" data-author="Stuart Russell" data-price="₹5,799" data-rent="₹1,499/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
       <div class="text-center mt-8">
@@ -578,93 +717,97 @@ tailwind.config = {
       </div>
     </div>
 
-    <!-- RECOMMENDED -->
-    <div id="recommended" class="tab-content hidden">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+    <!-- RECOMMENDED ─────────────────────────── -->
+    <div id="recommended" class="tab-content hidden" role="tabpanel">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Linear%20Algebra%20mathematics%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book013&orientation=portrait"
-              alt="Linear Algebra" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">51% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Linear Algebra and Its Applications by David C. Lay — Used maths book India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">51% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Linear Algebra and Its Applications</h3>
-            <p class="text-xs text-gray-500 mb-3">David C. Lay</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$78.40</span><span class="text-xs text-gray-400 line-through">$159.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $20/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Linear Algebra and Its Applications" data-author="David C. Lay" data-price="$78.40" data-rent="$20/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Linear Algebra and Its Applications" data-author="David C. Lay" data-price="$78.40" data-rent="$20/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Linear Algebra and Its Applications</h3>
+            <p class="text-xs text-gray-500 mb-2">David C. Lay</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹6,599</span><span class="text-xs text-gray-400 line-through">₹13,449</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,649/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Linear Algebra and Its Applications" data-author="David C. Lay" data-price="₹6,599" data-rent="₹1,649/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Linear Algebra and Its Applications" data-author="David C. Lay" data-price="₹6,599" data-rent="₹1,649/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Anatomy%20and%20Physiology%20medical%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book014&orientation=portrait"
-              alt="Human Anatomy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">54% OFF</div>
-            <span class="absolute top-3 left-3 bg-yellow-600 text-white px-2 py-1 rounded-full text-xs font-bold">Good</span>
+              alt="Human Anatomy and Physiology by Elaine N. Marieb — Used medical book India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">54% OFF</div>
+            <span class="absolute top-2 left-2 bg-yellow-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Good</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Human Anatomy &amp; Physiology</h3>
-            <p class="text-xs text-gray-500 mb-3">Elaine N. Marieb</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$82.80</span><span class="text-xs text-gray-400 line-through">$179.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $21/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Human Anatomy &amp; Physiology" data-author="Elaine N. Marieb" data-price="$82.80" data-rent="$21/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Human Anatomy &amp; Physiology" data-author="Elaine N. Marieb" data-price="$82.80" data-rent="$21/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Human Anatomy &amp; Physiology</h3>
+            <p class="text-xs text-gray-500 mb-2">Elaine N. Marieb</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹6,949</span><span class="text-xs text-gray-400 line-through">₹15,099</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,749/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Human Anatomy &amp; Physiology" data-author="Elaine N. Marieb" data-price="₹6,949" data-rent="₹1,749/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Human Anatomy &amp; Physiology" data-author="Elaine N. Marieb" data-price="₹6,949" data-rent="₹1,749/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Financial%20Accounting%20business%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book015&orientation=portrait"
-              alt="Financial Accounting" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">50% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Financial Accounting by Robert Libby — Used accounting textbook India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">50% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Financial Accounting</h3>
-            <p class="text-xs text-gray-500 mb-3">Robert Libby</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$89.99</span><span class="text-xs text-gray-400 line-through">$179.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $23/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Financial Accounting" data-author="Robert Libby" data-price="$89.99" data-rent="$23/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Financial Accounting" data-author="Robert Libby" data-price="$89.99" data-rent="$23/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Financial Accounting</h3>
+            <p class="text-xs text-gray-500 mb-2">Robert Libby</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹7,549</span><span class="text-xs text-gray-400 line-through">₹14,999</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,929/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Financial Accounting" data-author="Robert Libby" data-price="₹7,549" data-rent="₹1,929/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Financial Accounting" data-author="Robert Libby" data-price="₹7,549" data-rent="₹1,929/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="book-card bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
-          <div class="relative h-64 md:h-80 overflow-hidden">
+        <article class="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden group">
+          <div class="relative h-52 md:h-80 overflow-hidden">
             <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20Psychology%20textbook%20social%20science%20book%2C%20clean%20modern%20academic%20style%2C%20simple%20solid%20color%20background%2C%20professional%20photography&width=400&height=600&seq=book016&orientation=portrait"
-              alt="Psychology" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
-            <div class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold">53% OFF</div>
-            <span class="absolute top-3 left-3 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold">Like New</span>
+              alt="Psychology Themes and Variations by Wayne Weiten — Used psychology book India"
+              loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">53% OFF</div>
+            <span class="absolute top-2 left-2 bg-green-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">Like New</span>
           </div>
-          <div class="p-4">
-            <h3 class="font-bold text-gray-900 text-sm leading-tight mb-1">Psychology: Themes and Variations</h3>
-            <p class="text-xs text-gray-500 mb-3">Wayne Weiten</p>
-            <div class="flex items-center gap-2 mb-1"><span class="text-base font-bold text-gray-900">$75.20</span><span class="text-xs text-gray-400 line-through">$159.99</span></div>
-            <p class="text-xs text-primary font-semibold mb-3">Rent: $19/month</p>
-            <div class="flex gap-2">
-              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-2 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
-                data-book="Psychology: Themes and Variations" data-author="Wayne Weiten" data-price="$75.20" data-rent="$19/month">+ Cart</button>
-              <button class="order-book-btn flex-1 bg-primary text-white py-2 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
-                data-book="Psychology: Themes and Variations" data-author="Wayne Weiten" data-price="$75.20" data-rent="$19/month">Order</button>
+          <div class="p-3 md:p-4">
+            <h3 class="font-bold text-gray-900 text-xs md:text-sm leading-tight mb-1">Psychology: Themes &amp; Variations</h3>
+            <p class="text-xs text-gray-500 mb-2">Wayne Weiten</p>
+            <div class="flex items-center gap-1.5 mb-1"><span class="text-sm md:text-base font-bold text-gray-900">₹6,299</span><span class="text-xs text-gray-400 line-through">₹13,449</span></div>
+            <p class="text-xs text-primary font-semibold mb-3">Rent: ₹1,599/month</p>
+            <div class="flex gap-1.5">
+              <button class="add-to-cart-btn flex-1 bg-gray-100 text-gray-700 py-1.5 rounded-button text-xs font-semibold hover:bg-gray-200 transition"
+                data-book="Psychology: Themes and Variations" data-author="Wayne Weiten" data-price="₹6,299" data-rent="₹1,599/month">+ Cart</button>
+              <button class="order-book-btn flex-1 bg-primary text-white py-1.5 rounded-button text-xs font-semibold hover:bg-blue-700 transition"
+                data-book="Psychology: Themes and Variations" data-author="Wayne Weiten" data-price="₹6,299" data-rent="₹1,599/month">Order</button>
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
       <div class="text-center mt-8">
@@ -675,46 +818,41 @@ tailwind.config = {
 </section>
 
 <!-- ── HOW IT WORKS ───────────────────────────── -->
-<section class="py-16 md:py-20 bg-white">
+<section class="py-16 md:py-20 bg-white" aria-labelledby="how-heading">
   <div class="max-w-6xl mx-auto px-4 md:px-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">How It Works</h2>
-    <p class="text-center text-gray-500 mb-12 text-sm md:text-base">Simple steps to save money on your textbooks</p>
+    <h2 id="how-heading" class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">How It Works</h2>
+    <p class="text-center text-gray-500 mb-12 text-sm md:text-base">3 simple steps to save thousands on textbooks</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
       <div class="text-center">
-        <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-5">
-          <i class="ri-search-line text-3xl md:text-4xl text-primary"></i>
-        </div>
+        <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-5" aria-hidden="true"><i class="ri-search-line text-3xl md:text-4xl text-primary"></i></div>
         <div class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Step 1</div>
         <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Browse &amp; Select</h3>
-        <p class="text-gray-500 text-sm md:text-base">Search our extensive collection by title, author, ISBN, or subject. Filter by condition and price.</p>
+        <p class="text-gray-500 text-sm md:text-base">Search our collection by title, author, ISBN, or subject. Add to cart or order directly.</p>
       </div>
       <div class="text-center">
-        <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-5">
-          <i class="ri-shopping-bag-line text-3xl md:text-4xl text-primary"></i>
-        </div>
+        <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-5" aria-hidden="true"><i class="ri-shopping-bag-line text-3xl md:text-4xl text-primary"></i></div>
         <div class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Step 2</div>
         <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Buy or Rent</h3>
-        <p class="text-gray-500 text-sm md:text-base">Add books to your cart, choose to buy at 50% off or rent per semester. Then place your order by email.</p>
+        <p class="text-gray-500 text-sm md:text-base">Choose to buy at 50% off or rent from ₹999/month. Place your order by email or WhatsApp.</p>
       </div>
       <div class="text-center">
-        <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-5">
-          <i class="ri-money-dollar-circle-line text-3xl md:text-4xl text-primary"></i>
-        </div>
+        <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-5" aria-hidden="true"><i class="ri-money-rupee-circle-line text-3xl md:text-4xl text-primary"></i></div>
         <div class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Step 3</div>
         <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Save Money</h3>
-        <p class="text-gray-500 text-sm md:text-base">Enjoy minimum 50% discount on every book. Verified students get an extra 10% off. Start saving today!</p>
+        <p class="text-gray-500 text-sm md:text-base">Pay via UPI, card, or COD. Students save ₹15,000+ per semester. Extra 10% off with college ID.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── FLASH SALE ──────────────────────────────── -->
-<section class="py-16 bg-gradient-to-r from-red-500 to-red-600">
+<section class="py-16 bg-gradient-to-r from-red-500 to-red-600" aria-label="Flash sale">
   <div class="max-w-6xl mx-auto px-4 md:px-8">
     <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
       <div class="w-full md:w-2/5 max-w-xs mx-auto md:mx-0">
         <img src="https://readdy.ai/api/search-image?query=Professional%20textbook%20cover%20design%20for%20bestselling%20academic%20book%20with%20special%20discount%20sticker%2C%20clean%20modern%20style%2C%20simple%20solid%20color%20background%2C%20professional%20product%20photography&width=600&height=700&seq=deal001&orientation=portrait"
-          alt="Deal Book" class="w-full h-auto rounded-xl shadow-2xl">
+          alt="The Complete Guide to Programming by Robert C. Martin — Flash sale 70% off BookHub India"
+          loading="lazy" class="w-full h-auto rounded-xl shadow-2xl">
       </div>
       <div class="text-white text-center md:text-left">
         <div class="inline-block bg-white/20 px-4 py-1.5 rounded-full text-xs font-bold mb-4">Deal of the Day</div>
@@ -722,23 +860,21 @@ tailwind.config = {
         <h3 class="text-xl md:text-3xl font-bold mb-4">The Complete Guide to Programming</h3>
         <p class="text-base md:text-xl mb-5">by Robert C. Martin</p>
         <div class="flex items-center justify-center md:justify-start gap-4 mb-6">
-          <span class="text-4xl md:text-5xl font-bold">$29.99</span>
-          <span class="text-xl md:text-2xl line-through opacity-70">$99.99</span>
+          <span class="text-4xl md:text-5xl font-bold">₹2,499</span>
+          <span class="text-xl md:text-2xl line-through opacity-70">₹8,399</span>
           <span class="bg-white text-red-600 px-3 py-1.5 rounded-full font-bold text-sm">70% OFF</span>
         </div>
         <div class="bg-white/20 rounded-xl p-5 mb-5 inline-block">
           <p class="text-xs mb-2 opacity-80">Time Remaining</p>
           <div class="flex gap-3 text-center items-center">
-            <div><div id="countdown-hours" class="text-3xl md:text-4xl font-bold">08</div><div class="text-xs opacity-70">Hours</div></div>
+            <div><div id="cd-h" class="text-3xl md:text-4xl font-bold">08</div><div class="text-xs opacity-70">Hours</div></div>
             <div class="text-3xl font-bold">:</div>
-            <div><div id="countdown-minutes" class="text-3xl md:text-4xl font-bold">45</div><div class="text-xs opacity-70">Min</div></div>
+            <div><div id="cd-m" class="text-3xl md:text-4xl font-bold">45</div><div class="text-xs opacity-70">Min</div></div>
             <div class="text-3xl font-bold">:</div>
-            <div><div id="countdown-seconds" class="text-3xl md:text-4xl font-bold">32</div><div class="text-xs opacity-70">Sec</div></div>
+            <div><div id="cd-s" class="text-3xl md:text-4xl font-bold">32</div><div class="text-xs opacity-70">Sec</div></div>
           </div>
         </div>
-        <p class="flex items-center justify-center md:justify-start gap-2 mb-5 text-sm">
-          <i class="ri-error-warning-line"></i> Only 12 copies left in stock!
-        </p>
+        <p class="flex items-center justify-center md:justify-start gap-2 mb-5 text-sm"><i class="ri-error-warning-line"></i> Only 12 copies left!</p>
         <button class="popup-trigger bg-white text-red-600 px-8 py-3 md:py-4 rounded-button font-bold text-base md:text-lg hover:bg-gray-100 transition">
           Grab Now — Order by Email
         </button>
@@ -748,96 +884,88 @@ tailwind.config = {
 </section>
 
 <!-- ── WHY CHOOSE US ──────────────────────────── -->
-<section class="py-16 md:py-20 bg-gray-50">
+<section class="py-16 md:py-20 bg-gray-50" aria-labelledby="why-heading">
   <div class="max-w-6xl mx-auto px-4 md:px-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">Why Choose Us</h2>
-    <p class="text-center text-gray-500 mb-12 text-sm md:text-base">The best place for students to buy and rent books</p>
+    <h2 id="why-heading" class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">Why Students Choose BookHub India</h2>
+    <p class="text-center text-gray-500 mb-12 text-sm md:text-base">The most trusted platform for affordable textbooks in India</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
       <div class="bg-white rounded-xl shadow-md p-5 md:p-8 text-center">
-        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4">
-          <i class="ri-percent-line text-2xl md:text-4xl text-primary"></i>
-        </div>
-        <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-2">50% Off Guarantee</h3>
-        <p class="text-gray-500 text-xs md:text-sm">Every book at minimum half price. Save hundreds each semester.</p>
+        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4" aria-hidden="true"><i class="ri-percent-line text-2xl md:text-4xl text-primary"></i></div>
+        <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-2">50% Off Guaranteed</h3>
+        <p class="text-gray-500 text-xs md:text-sm">Every book at minimum half price. Save thousands every semester.</p>
       </div>
       <div class="bg-white rounded-xl shadow-md p-5 md:p-8 text-center">
-        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4">
-          <i class="ri-shield-check-line text-2xl md:text-4xl text-primary"></i>
-        </div>
-        <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-2">Quality Assured</h3>
-        <p class="text-gray-500 text-xs md:text-sm">All books inspected and graded. Clear condition ratings, no surprises.</p>
+        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4" aria-hidden="true"><i class="ri-truck-line text-2xl md:text-4xl text-primary"></i></div>
+        <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-2">Pan-India Delivery</h3>
+        <p class="text-gray-500 text-xs md:text-sm">Fast delivery to all cities and towns. Free shipping above ₹999.</p>
       </div>
       <div class="bg-white rounded-xl shadow-md p-5 md:p-8 text-center">
-        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4">
-          <i class="ri-calendar-line text-2xl md:text-4xl text-primary"></i>
-        </div>
+        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4" aria-hidden="true"><i class="ri-calendar-line text-2xl md:text-4xl text-primary"></i></div>
         <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-2">Flexible Rentals</h3>
-        <p class="text-gray-500 text-xs md:text-sm">Rent for a semester or year. Easy returns and extensions available.</p>
+        <p class="text-gray-500 text-xs md:text-sm">Rent from ₹999/month. Semester or yearly plans. Easy returns.</p>
       </div>
       <div class="bg-white rounded-xl shadow-md p-5 md:p-8 text-center">
-        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4">
-          <i class="ri-graduation-cap-line text-2xl md:text-4xl text-primary"></i>
-        </div>
+        <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-4" aria-hidden="true"><i class="ri-graduation-cap-line text-2xl md:text-4xl text-primary"></i></div>
         <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-2">Student Special</h3>
-        <p class="text-gray-500 text-xs md:text-sm">Extra discounts with student ID. Free shipping on orders over $25.</p>
+        <p class="text-gray-500 text-xs md:text-sm">Extra 10% off with college ID. UPI, COD &amp; card accepted.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── TESTIMONIALS ───────────────────────────── -->
-<section class="py-16 md:py-20 bg-white">
+<section class="py-16 md:py-20 bg-white" aria-labelledby="reviews-heading">
   <div class="max-w-6xl mx-auto px-4 md:px-8">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">What Students Say</h2>
-    <p class="text-center text-gray-500 mb-12 text-sm md:text-base">Real reviews from real students</p>
+    <h2 id="reviews-heading" class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3">What Students Say</h2>
+    <p class="text-center text-gray-500 mb-12 text-sm md:text-base">Real reviews from Indian students</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-      <div class="bg-gray-50 rounded-xl p-6 md:p-8">
-        <div class="flex gap-1 mb-4">
-          <i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i>
-          <i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i>
+      <blockquote class="bg-gray-50 rounded-xl p-6 md:p-8">
+        <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+          <i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i>
+          <i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i>
         </div>
-        <p class="text-gray-700 mb-6 text-sm md:text-base">I saved over $400 this semester using BookHub! The books arrived in great condition and the student discount made it even better.</p>
-        <div class="flex items-center gap-4">
+        <p class="text-gray-700 mb-6 text-sm md:text-base">I saved over ₹18,000 this semester using BookHub! The books arrived in great condition and the student discount made it even better. Highly recommend!</p>
+        <footer class="flex items-center gap-4">
           <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20portrait%20of%20young%20female%20college%20student%20with%20friendly%20smile%2C%20clean%20simple%20background%2C%20natural%20lighting%2C%20high%20quality%20photography&width=80&height=80&seq=student001&orientation=squarish"
-            alt="Emily" class="w-12 h-12 rounded-full object-cover">
-          <div><div class="font-bold text-gray-900 text-sm">Emily Rodriguez</div><div class="text-xs text-gray-500">Stanford University</div></div>
+            alt="Priya Sharma — Engineering student, IIT Bombay" loading="lazy" class="w-12 h-12 rounded-full object-cover">
+          <div><cite class="font-bold text-gray-900 text-sm not-italic">Priya Sharma</cite><p class="text-xs text-gray-500">IIT Bombay</p></div>
+        </footer>
+      </blockquote>
+      <blockquote class="bg-gray-50 rounded-xl p-6 md:p-8">
+        <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+          <i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i>
+          <i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i>
         </div>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-6 md:p-8">
-        <div class="flex gap-1 mb-4">
-          <i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i>
-          <i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i>
-        </div>
-        <p class="text-gray-700 mb-6 text-sm md:text-base">The rental option is perfect for my engineering courses. I don't need to keep all those heavy textbooks after the semester ends. Great service!</p>
-        <div class="flex items-center gap-4">
+        <p class="text-gray-700 mb-6 text-sm md:text-base">The rental option is perfect for my engineering courses. I ordered on WhatsApp and books arrived the next day. Great service and very easy process!</p>
+        <footer class="flex items-center gap-4">
           <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20portrait%20of%20young%20male%20college%20student%20with%20confident%20expression%2C%20clean%20simple%20background%2C%20natural%20lighting%2C%20high%20quality%20photography&width=80&height=80&seq=student002&orientation=squarish"
-            alt="Michael" class="w-12 h-12 rounded-full object-cover">
-          <div><div class="font-bold text-gray-900 text-sm">Michael Chen</div><div class="text-xs text-gray-500">MIT</div></div>
+            alt="Rahul Verma — MBA student, IIM Ahmedabad" loading="lazy" class="w-12 h-12 rounded-full object-cover">
+          <div><cite class="font-bold text-gray-900 text-sm not-italic">Rahul Verma</cite><p class="text-xs text-gray-500">IIM Ahmedabad</p></div>
+        </footer>
+      </blockquote>
+      <blockquote class="bg-gray-50 rounded-xl p-6 md:p-8">
+        <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars">
+          <i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i>
+          <i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i><i class="ri-star-fill text-secondary" aria-hidden="true"></i>
         </div>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-6 md:p-8">
-        <div class="flex gap-1 mb-4">
-          <i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i>
-          <i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i><i class="ri-star-fill text-secondary"></i>
-        </div>
-        <p class="text-gray-700 mb-6 text-sm md:text-base">As a medical student, textbooks are incredibly expensive. BookHub has been a lifesaver! The quality is excellent and I love the buyback option.</p>
-        <div class="flex items-center gap-4">
+        <p class="text-gray-700 mb-6 text-sm md:text-base">Medical textbooks are so expensive. BookHub India saved me lakhs over my MBBS! The condition was excellent and delivery was fast to Pune.</p>
+        <footer class="flex items-center gap-4">
           <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20portrait%20of%20young%20female%20medical%20student%20with%20warm%20smile%2C%20clean%20simple%20background%2C%20natural%20lighting%2C%20high%20quality%20photography&width=80&height=80&seq=student003&orientation=squarish"
-            alt="Sarah" class="w-12 h-12 rounded-full object-cover">
-          <div><div class="font-bold text-gray-900 text-sm">Sarah Johnson</div><div class="text-xs text-gray-500">Harvard Medical School</div></div>
-        </div>
-      </div>
+            alt="Ananya Singh — MBBS student, Armed Forces Medical College Pune" loading="lazy" class="w-12 h-12 rounded-full object-cover">
+          <div><cite class="font-bold text-gray-900 text-sm not-italic">Ananya Singh</cite><p class="text-xs text-gray-500">AFMC Pune</p></div>
+        </footer>
+      </blockquote>
     </div>
   </div>
 </section>
 
 <!-- ── NEWSLETTER ──────────────────────────────── -->
-<section class="py-16 md:py-20 bg-gradient-to-r from-primary to-blue-700">
+<section class="py-16 md:py-20 bg-gradient-to-r from-primary to-blue-700" aria-label="Newsletter signup">
   <div class="max-w-4xl mx-auto px-4 md:px-8 text-center">
     <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Get Exclusive Deals &amp; New Arrivals</h2>
-    <p class="text-lg md:text-xl text-blue-100 mb-8">Subscribe and get 5% off your first order</p>
+    <p class="text-lg md:text-xl text-blue-100 mb-8">Subscribe and get 5% off your first order · No spam ever</p>
     <div class="flex flex-col sm:flex-row gap-3 max-w-2xl mx-auto">
-      <input type="email" placeholder="Enter your email address"
+      <input type="email" placeholder="Enter your email address" aria-label="Email address for newsletter"
         class="flex-1 px-5 py-3 md:py-4 rounded-lg text-sm md:text-base border-none focus:outline-none">
       <button class="bg-secondary text-white px-8 py-3 md:py-4 rounded-button font-semibold hover:bg-yellow-600 transition text-sm md:text-base whitespace-nowrap">Subscribe</button>
     </div>
@@ -846,20 +974,20 @@ tailwind.config = {
 </section>
 
 <!-- ── FOOTER ──────────────────────────────────── -->
-<footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+<footer class="bg-gray-900 text-gray-300 py-12 md:py-16" role="contentinfo">
   <div class="max-w-7xl mx-auto px-4 md:px-8">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
       <div class="col-span-2 md:col-span-1">
-        <div class="font-['Pacifico'] text-2xl md:text-3xl text-white mb-3">BookHub</div>
-        <p class="text-sm mb-5 text-gray-400">Your trusted source for affordable used textbooks. Helping students save money since 2020.</p>
+        <a href="/" class="font-['Pacifico'] text-2xl md:text-3xl text-white mb-3 block">BookHub</a>
+        <p class="text-sm mb-5 text-gray-400">India's most affordable platform for used textbooks. Helping students save since 2020.</p>
         <div class="flex gap-3">
-          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-facebook-fill text-sm"></i></a>
-          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-twitter-fill text-sm"></i></a>
-          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-instagram-line text-sm"></i></a>
-          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-linkedin-fill text-sm"></i></a>
+          <a href="#" aria-label="Facebook" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-facebook-fill text-sm" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-twitter-fill text-sm" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"><i class="ri-instagram-line text-sm" aria-hidden="true"></i></a>
+          <a href="#" aria-label="WhatsApp" class="w-9 h-9 flex items-center justify-center bg-gray-800 rounded-full hover:bg-[#25D366] transition"><i class="ri-whatsapp-line text-sm" aria-hidden="true"></i></a>
         </div>
       </div>
-      <div>
+      <nav aria-label="Quick links">
         <h3 class="text-white font-bold text-base mb-4">Quick Links</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="#" class="hover:text-white transition">Buy Books</a></li>
@@ -868,9 +996,9 @@ tailwind.config = {
           <li><a href="#" class="hover:text-white transition">Student Program</a></li>
           <li><a href="#" class="hover:text-white transition">Categories</a></li>
         </ul>
-      </div>
-      <div>
-        <h3 class="text-white font-bold text-base mb-4">Support</h3>
+      </nav>
+      <nav aria-label="Customer service links">
+        <h3 class="text-white font-bold text-base mb-4">Customer Service</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="#" class="hover:text-white transition">FAQs</a></li>
           <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
@@ -878,26 +1006,28 @@ tailwind.config = {
           <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
           <li><a href="#" class="hover:text-white transition">Track Order</a></li>
         </ul>
-      </div>
-      <div>
-        <h3 class="text-white font-bold text-base mb-4">Contact</h3>
+      </nav>
+      <address class="not-italic">
+        <h3 class="text-white font-bold text-base mb-4">Contact Us</h3>
         <ul class="space-y-2.5 text-sm">
-          <li class="flex items-start gap-2"><i class="ri-mail-line mt-0.5"></i><span>support@bookhub.com</span></li>
-          <li class="flex items-start gap-2"><i class="ri-phone-line mt-0.5"></i><span>1-800-BOOK-HUB</span></li>
-          <li class="flex items-start gap-2"><i class="ri-map-pin-line mt-0.5"></i><span>123 Education Street<br>Boston, MA 02115</span></li>
+          <li class="flex items-start gap-2"><i class="ri-mail-line mt-0.5" aria-hidden="true"></i><a href="mailto:support@bookhub.in" class="hover:text-white transition">support@bookhub.in</a></li>
+          <li class="flex items-start gap-2"><i class="ri-phone-line mt-0.5" aria-hidden="true"></i><a href="tel:+911800266548" class="hover:text-white transition">1800-266-5482 (Toll Free)</a></li>
+          <li class="flex items-start gap-2"><i class="ri-whatsapp-line mt-0.5 text-[#25D366]" aria-hidden="true"></i><a href="https://wa.me/917000000000" class="hover:text-white transition">WhatsApp Order</a></li>
+          <li class="flex items-start gap-2"><i class="ri-map-pin-line mt-0.5" aria-hidden="true"></i><span>123 Education Lane, Andheri East<br>Mumbai — 400 069, Maharashtra</span></li>
         </ul>
-      </div>
+      </address>
     </div>
     <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-xs text-gray-500">© 2026 BookHub. All rights reserved.</p>
+      <p class="text-xs text-gray-500 text-center sm:text-left">© 2026 BookHub India. All rights reserved. | GST: 27XXXXX1234X1ZX</p>
       <div class="flex items-center gap-4 flex-wrap justify-center">
-        <a href="#" class="text-xs hover:text-white transition">Terms of Service</a>
+        <a href="#" class="text-xs hover:text-white transition">Terms</a>
         <a href="#" class="text-xs hover:text-white transition">Privacy Policy</a>
         <div class="flex items-center gap-2 text-gray-400">
-          <i class="ri-visa-fill text-xl"></i>
-          <i class="ri-mastercard-fill text-xl"></i>
-          <i class="ri-paypal-fill text-xl"></i>
-          <i class="ri-bank-card-line text-xl"></i>
+          <i class="ri-visa-fill text-xl" aria-label="Visa"></i>
+          <i class="ri-mastercard-fill text-xl" aria-label="Mastercard"></i>
+          <i class="ri-paypal-fill text-xl" aria-label="PayPal"></i>
+          <span class="text-xs font-bold border border-gray-600 px-1.5 py-0.5 rounded" aria-label="UPI">UPI</span>
+          <span class="text-xs font-bold border border-gray-600 px-1.5 py-0.5 rounded" aria-label="COD">COD</span>
         </div>
       </div>
     </div>
@@ -905,69 +1035,57 @@ tailwind.config = {
 </footer>
 
 <!-- ── ORDER EMAIL POPUP ──────────────────────── -->
-<div id="mail-popup" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
+<div id="mail-popup" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4" role="dialog" aria-modal="true" aria-labelledby="popup-title">
   <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[92vh] overflow-y-auto">
     <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-5 flex items-center justify-between rounded-t-2xl">
       <div>
-        <h3 class="text-xl font-bold text-gray-900">Send Order Email</h3>
-        <p class="text-xs text-gray-500 mt-0.5">Fill in your details — we'll confirm within 24 hours</p>
+        <h2 id="popup-title" class="text-xl font-bold text-gray-900">Send Order Email</h2>
+        <p class="text-xs text-gray-500 mt-0.5">We'll confirm availability and pricing within 24 hours</p>
       </div>
-      <button id="close-mail-popup" class="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition">
+      <button id="close-mail-popup" aria-label="Close order form" class="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition">
         <i class="ri-close-line text-xl"></i>
       </button>
     </div>
     <div class="px-6 py-6">
       <form id="order-form" novalidate>
         <div class="space-y-4">
-          <!-- Name -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Your Name *</label>
-            <input type="text" id="customer-name" autocomplete="name"
-              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition"
-              placeholder="Anurag Thakur">
-            <span id="name-error" class="err-msg">Please enter your full name.</span>
+            <label for="customer-name" class="block text-sm font-semibold text-gray-700 mb-1.5">Your Name *</label>
+            <input type="text" id="customer-name" autocomplete="name" placeholder="Anurag Thakur"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition">
+            <span id="name-error" class="err-msg" role="alert"></span>
           </div>
-          <!-- Email -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Your Email *</label>
-            <input type="email" id="customer-email" autocomplete="email"
-              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition"
-              placeholder="you@example.com">
-            <span id="email-error" class="err-msg">Please enter a valid email address.</span>
+            <label for="customer-email" class="block text-sm font-semibold text-gray-700 mb-1.5">Your Email *</label>
+            <input type="email" id="customer-email" autocomplete="email" placeholder="you@college.ac.in"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition">
+            <span id="email-error" class="err-msg" role="alert"></span>
           </div>
-          <!-- Phone -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Phone Number <span class="text-gray-400 font-normal">(optional)</span></label>
-            <input type="tel" id="customer-phone" autocomplete="tel"
-              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition"
-              placeholder="+91 98765 43210">
+            <label for="customer-phone" class="block text-sm font-semibold text-gray-700 mb-1.5">WhatsApp / Phone <span class="text-gray-400 font-normal">(optional)</span></label>
+            <input type="tel" id="customer-phone" autocomplete="tel" placeholder="+91 98765 43210"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition">
           </div>
-          <!-- Book details -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Books You Want *</label>
+            <label for="book-details" class="block text-sm font-semibold text-gray-700 mb-1.5">Books You Want *</label>
             <textarea id="book-details" rows="6" maxlength="1000"
-              placeholder="Example:&#10;1. Introduction to Algorithms by Thomas Cormen – Buy – Qty: 1&#10;2. Organic Chemistry by Paula Bruice – Rent – Qty: 1"
+              placeholder="Example:&#10;1. Introduction to Algorithms — Buy @ ₹3,849 × 1&#10;2. Organic Chemistry — Rent @ ₹1,499/month × 1"
               class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition resize-none"></textarea>
             <div class="flex items-center justify-between mt-1">
-              <span id="books-error" class="err-msg">Please list at least one book.</span>
+              <span id="books-error" class="err-msg" role="alert"></span>
               <p class="text-xs text-gray-400 ml-auto"><span id="char-count">0</span>/1000</p>
             </div>
           </div>
-          <!-- Notes -->
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1.5">Additional Notes <span class="text-gray-400 font-normal">(optional)</span></label>
+            <label for="additional-notes" class="block text-sm font-semibold text-gray-700 mb-1.5">Additional Notes <span class="text-gray-400 font-normal">(optional)</span></label>
             <textarea id="additional-notes" rows="2"
               class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-primary transition resize-none"
-              placeholder="Any special requests, preferred edition, delivery details…"></textarea>
+              placeholder="Preferred edition, delivery city, special requests…"></textarea>
           </div>
         </div>
         <div class="flex gap-3 mt-6">
-          <button type="button" id="cancel-order"
-            class="flex-1 bg-white text-gray-700 border-2 border-gray-200 px-4 py-3 rounded-button font-semibold hover:bg-gray-50 transition text-sm">
-            Cancel
-          </button>
-          <button type="submit"
-            class="flex-1 bg-primary text-white px-4 py-3 rounded-button font-semibold hover:bg-blue-700 transition text-sm flex items-center justify-center gap-2">
+          <button type="button" id="cancel-order" class="flex-1 bg-white text-gray-700 border-2 border-gray-200 px-4 py-3 rounded-button font-semibold hover:bg-gray-50 transition text-sm">Cancel</button>
+          <button type="submit" class="flex-1 bg-primary text-white px-4 py-3 rounded-button font-semibold hover:bg-blue-700 transition text-sm flex items-center justify-center gap-2">
             <i class="ri-send-plane-line"></i> Send Order Email
           </button>
         </div>
@@ -977,13 +1095,13 @@ tailwind.config = {
 </div>
 
 <!-- ── SUCCESS MODAL ──────────────────────────── -->
-<div id="success-message" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
+<div id="success-message" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4" role="dialog" aria-modal="true" aria-label="Order submitted">
   <div class="bg-white rounded-2xl max-w-sm w-full p-8 text-center">
-    <div class="w-20 h-20 flex items-center justify-center bg-green-100 rounded-full mx-auto mb-5">
+    <div class="w-20 h-20 flex items-center justify-center bg-green-100 rounded-full mx-auto mb-5" aria-hidden="true">
       <i class="ri-mail-check-line text-4xl text-green-600"></i>
     </div>
-    <h3 class="text-2xl font-bold text-gray-900 mb-2">Email Sent!</h3>
-    <p class="text-gray-500 text-sm mb-6">Your order request is on its way. We'll confirm availability and pricing within 24 hours.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">Order Request Sent!</h2>
+    <p class="text-gray-500 text-sm mb-6">We'll confirm availability and pricing within 24 hours. Check your email or WhatsApp for updates.</p>
     <button id="close-success" class="bg-primary text-white px-8 py-3 rounded-button font-semibold hover:bg-blue-700 transition text-sm">Done</button>
   </div>
 </div>
@@ -993,226 +1111,205 @@ tailwind.config = {
 ══════════════════════════════════════════════ -->
 <script>
 // ── CART STATE ────────────────────────────────
-const cartState = { items: [] };
+const cart = { items: [] };
 
 function addToCart(book, author, price, rent) {
-  const existing = cartState.items.find(i => i.book === book);
-  if (existing) {
-    existing.qty++;
-  } else {
-    cartState.items.push({ book, author, price, rent, qty: 1, type: 'buy' });
-  }
-  syncCartUI();
-  showToast(`"${book.length > 32 ? book.slice(0,32) + '…' : book}" added to cart`);
+  const ex = cart.items.find(i => i.book === book);
+  if (ex) { ex.qty++; }
+  else { cart.items.push({ book, author, price, rent, qty: 1, type: 'buy' }); }
+  syncCart();
+  const short = book.length > 30 ? book.slice(0, 30) + '…' : book;
+  toast(`"${short}" added to cart!`);
 }
 
-function removeFromCart(idx) {
-  cartState.items.splice(idx, 1);
-  syncCartUI();
+function removeFromCart(i) { cart.items.splice(i, 1); syncCart(); }
+
+function changeQty(i, d) {
+  cart.items[i].qty += d;
+  if (cart.items[i].qty <= 0) cart.items.splice(i, 1);
+  syncCart();
 }
 
-function changeQty(idx, delta) {
-  cartState.items[idx].qty += delta;
-  if (cartState.items[idx].qty <= 0) cartState.items.splice(idx, 1);
-  syncCartUI();
+function toggleType(i) {
+  cart.items[i].type = cart.items[i].type === 'buy' ? 'rent' : 'buy';
+  syncCart();
 }
 
-function toggleType(idx) {
-  cartState.items[idx].type = cartState.items[idx].type === 'buy' ? 'rent' : 'buy';
-  syncCartUI();
-}
-
-function cartCount() { return cartState.items.reduce((s, i) => s + i.qty, 0); }
+function cartCount() { return cart.items.reduce((s, i) => s + i.qty, 0); }
 
 function cartTotal() {
-  return cartState.items.reduce((s, i) => {
+  return cart.items.reduce((s, i) => {
     const p = parseFloat((i.type === 'buy' ? i.price : i.rent).replace(/[^0-9.]/g, ''));
     return s + p * i.qty;
   }, 0);
 }
 
-function cartToOrderText() {
-  if (!cartState.items.length) return '';
-  return cartState.items.map((item, i) => {
-    const label = item.type === 'buy' ? `Buy @ ${item.price}` : `Rent @ ${item.rent}`;
-    return `${i+1}. ${item.book} by ${item.author} — ${label} × ${item.qty}`;
+function cartToText() {
+  if (!cart.items.length) return '';
+  return cart.items.map((it, n) => {
+    const mode = it.type === 'buy' ? `Buy @ ${it.price}` : `Rent @ ${it.rent}`;
+    return `${n+1}. ${it.book} by ${it.author}\n   ${mode} × ${it.qty}`;
   }).join('\n');
 }
 
-function syncCartUI() {
-  const count = cartCount();
+function syncCart() {
+  const n = cartCount();
   const badge = document.getElementById('cart-count');
-  badge.textContent = count;
-  badge.classList.toggle('hidden', count === 0);
-  renderCartItems();
+  badge.textContent = n;
+  badge.classList.toggle('hidden', n === 0);
+  renderCart();
 }
 
-function renderCartItems() {
-  const container = document.getElementById('cart-items');
+function renderCart() {
+  const wrap  = document.getElementById('cart-items');
   const empty = document.getElementById('cart-empty');
-  const footer = document.getElementById('cart-footer');
-  const total = document.getElementById('cart-total');
-
-  if (!cartState.items.length) {
-    container.innerHTML = '';
-    empty.classList.remove('hidden');
-    footer.classList.add('hidden');
-    return;
+  const foot  = document.getElementById('cart-footer');
+  const tot   = document.getElementById('cart-total');
+  if (!cart.items.length) {
+    wrap.innerHTML = ''; empty.classList.remove('hidden'); foot.classList.add('hidden'); return;
   }
-  empty.classList.add('hidden');
-  footer.classList.remove('hidden');
-  total.textContent = '$' + cartTotal().toFixed(2);
-
-  container.innerHTML = cartState.items.map((item, i) => `
+  empty.classList.add('hidden'); foot.classList.remove('hidden');
+  tot.textContent = '₹' + cartTotal().toLocaleString('en-IN');
+  wrap.innerHTML = cart.items.map((it, i) => `
     <div class="flex gap-3 pb-4 border-b border-gray-100 last:border-0">
       <div class="flex-1 min-w-0">
-        <p class="font-semibold text-sm text-gray-900 leading-snug mb-0.5 truncate">${item.book}</p>
-        <p class="text-xs text-gray-400 mb-2">${item.author}</p>
+        <p class="font-semibold text-sm text-gray-900 leading-snug mb-0.5 truncate">${it.book}</p>
+        <p class="text-xs text-gray-400 mb-2">${it.author}</p>
         <div class="flex items-center gap-1.5 mb-2.5">
-          <button onclick="toggleType(${i})"
-            class="text-xs px-2.5 py-1 rounded-full border font-medium transition ${item.type === 'buy' ? 'bg-primary text-white border-primary' : 'border-gray-300 text-gray-500 hover:border-primary'}">
-            Buy ${item.price}
-          </button>
-          <button onclick="toggleType(${i})"
-            class="text-xs px-2.5 py-1 rounded-full border font-medium transition ${item.type === 'rent' ? 'bg-primary text-white border-primary' : 'border-gray-300 text-gray-500 hover:border-primary'}">
-            Rent ${item.rent}
-          </button>
+          <button onclick="toggleType(${i})" class="text-xs px-2 py-1 rounded-full border font-medium transition ${it.type==='buy'?'bg-primary text-white border-primary':'border-gray-300 text-gray-500'}">Buy ${it.price}</button>
+          <button onclick="toggleType(${i})" class="text-xs px-2 py-1 rounded-full border font-medium transition ${it.type==='rent'?'bg-primary text-white border-primary':'border-gray-300 text-gray-500'}">Rent ${it.rent}</button>
         </div>
         <div class="flex items-center gap-2">
-          <button onclick="changeQty(${i}, -1)" class="w-6 h-6 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-bold flex items-center justify-center transition">−</button>
-          <span class="text-sm font-semibold w-5 text-center">${item.qty}</span>
-          <button onclick="changeQty(${i}, 1)" class="w-6 h-6 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-bold flex items-center justify-center transition">+</button>
+          <button onclick="changeQty(${i},-1)" class="w-6 h-6 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-bold flex items-center justify-center">−</button>
+          <span class="text-sm font-semibold w-5 text-center">${it.qty}</span>
+          <button onclick="changeQty(${i},1)"  class="w-6 h-6 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-bold flex items-center justify-center">+</button>
         </div>
       </div>
-      <button onclick="removeFromCart(${i})" class="text-gray-300 hover:text-red-500 transition self-start mt-1">
+      <button onclick="removeFromCart(${i})" aria-label="Remove ${it.book}" class="text-gray-300 hover:text-red-500 transition self-start mt-1">
         <i class="ri-delete-bin-line"></i>
       </button>
-    </div>
-  `).join('');
+    </div>`).join('');
 }
 
 // ── TOAST ─────────────────────────────────────
 let toastTimer;
-function showToast(msg) {
-  const toast = document.getElementById('toast');
+function toast(msg) {
+  const el = document.getElementById('toast');
   document.getElementById('toast-msg').textContent = msg;
-  toast.classList.add('show');
+  el.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 3200);
 }
 
 // ── POPUP ─────────────────────────────────────
-function openPopup(prefill = '') {
+function openPopup(pre = '') {
   document.getElementById('mail-popup').classList.remove('hidden');
   document.body.style.overflow = 'hidden';
-  if (prefill) {
+  if (pre) {
     const ta = document.getElementById('book-details');
-    ta.value = prefill;
-    document.getElementById('char-count').textContent = prefill.length;
+    ta.value = pre;
+    document.getElementById('char-count').textContent = pre.length;
   }
 }
 function closePopup() {
   document.getElementById('mail-popup').classList.add('hidden');
   document.body.style.overflow = '';
-  // Clear validation state
-  ['customer-name','customer-email','book-details'].forEach(id => clearErr(id, id.replace('-','-') + '-error'));
+  ['customer-name','customer-email','book-details'].forEach(id => clearErr(id, id + '-error'));
 }
 
 // ── FORM VALIDATION ───────────────────────────
-function showErr(fieldId, errId, msg) {
-  document.getElementById(fieldId).classList.add('field-error');
-  const e = document.getElementById(errId);
-  e.textContent = msg;
-  e.classList.add('show');
+function showErr(fid, eid, msg) {
+  document.getElementById(fid).classList.add('field-error');
+  const e = document.getElementById(eid); e.textContent = msg; e.classList.add('show');
 }
-function clearErr(fieldId, errId) {
-  document.getElementById(fieldId).classList.remove('field-error');
-  document.getElementById(errId)?.classList.remove('show');
+function clearErr(fid, eid) {
+  document.getElementById(fid).classList.remove('field-error');
+  document.getElementById(eid)?.classList.remove('show');
 }
-
-function validateForm() {
+function validate() {
   let ok = true;
-  const name = document.getElementById('customer-name').value.trim();
-  const email = document.getElementById('customer-email').value.trim();
-  const books = document.getElementById('book-details').value.trim();
-
-  if (name.length < 2) { showErr('customer-name','name-error','Please enter your full name.'); ok = false; }
-  else clearErr('customer-name','name-error');
-
-  if (!email) { showErr('customer-email','email-error','Email is required.'); ok = false; }
-  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showErr('customer-email','email-error','Enter a valid email address.'); ok = false; }
-  else clearErr('customer-email','email-error');
-
-  if (!books) { showErr('book-details','books-error','Please list at least one book.'); ok = false; }
-  else clearErr('book-details','books-error');
-
+  const n = document.getElementById('customer-name').value.trim();
+  const e = document.getElementById('customer-email').value.trim();
+  const b = document.getElementById('book-details').value.trim();
+  if (n.length < 2)      { showErr('customer-name','name-error','Please enter your full name.'); ok = false; }
+  else                    clearErr('customer-name','name-error');
+  if (!e)                 { showErr('customer-email','email-error','Email is required.'); ok = false; }
+  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) { showErr('customer-email','email-error','Enter a valid email.'); ok = false; }
+  else                    clearErr('customer-email','email-error');
+  if (!b)                 { showErr('book-details','books-error','Please list at least one book.'); ok = false; }
+  else                    clearErr('book-details','books-error');
   return ok;
 }
 
-// ── COUNTDOWN TIMER ───────────────────────────
-(function startCountdown() {
-  const deadline = Date.now() + (8 * 3600 + 45 * 60 + 32) * 1000;
+// ── COUNTDOWN ─────────────────────────────────
+(function() {
+  const end = Date.now() + (8*3600 + 45*60 + 32)*1000;
   function tick() {
-    const left = Math.max(0, deadline - Date.now());
-    const h = Math.floor(left / 3600000);
-    const m = Math.floor((left % 3600000) / 60000);
-    const s = Math.floor((left % 60000) / 1000);
-    document.getElementById('countdown-hours').textContent   = String(h).padStart(2,'0');
-    document.getElementById('countdown-minutes').textContent = String(m).padStart(2,'0');
-    document.getElementById('countdown-seconds').textContent = String(s).padStart(2,'0');
-    if (left > 0) setTimeout(tick, 1000);
+    const r = Math.max(0, end - Date.now());
+    document.getElementById('cd-h').textContent = String(Math.floor(r/3600000)).padStart(2,'0');
+    document.getElementById('cd-m').textContent = String(Math.floor((r%3600000)/60000)).padStart(2,'0');
+    document.getElementById('cd-s').textContent = String(Math.floor((r%60000)/1000)).padStart(2,'0');
+    if (r > 0) setTimeout(tick, 1000);
   }
   tick();
 })();
 
-// ── MAIN INIT ─────────────────────────────────
-document.addEventListener('DOMContentLoaded', function () {
+// ── WHATSAPP ORDER TEXT ────────────────────────
+function waOrderText() {
+  const items = cartToText() || 'I would like to enquire about your books.';
+  return encodeURIComponent('Hello BookHub India! 🙏\n\nI\'d like to place an order:\n\n' + items + '\n\nPlease confirm availability and pricing. Thank you!');
+}
+
+// ── INIT ──────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
 
   // Hamburger
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
-  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const hIcon = document.getElementById('hamburger-icon');
   hamburger.addEventListener('click', () => {
     const open = mobileMenu.classList.toggle('open');
-    hamburgerIcon.className = open ? 'ri-close-line text-xl' : 'ri-menu-line text-xl';
+    hIcon.className = open ? 'ri-close-line text-xl' : 'ri-menu-line text-xl';
+    hamburger.setAttribute('aria-expanded', open);
   });
 
-  // Cart
-  document.getElementById('open-cart').addEventListener('click', () => {
+  // Cart open/close
+  function openCart() {
     document.getElementById('cart-sidebar').classList.add('open');
     document.getElementById('cart-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
-  });
+  }
   function closeCart() {
     document.getElementById('cart-sidebar').classList.remove('open');
     document.getElementById('cart-overlay').classList.remove('open');
     document.body.style.overflow = '';
   }
+  document.getElementById('open-cart').addEventListener('click', openCart);
   document.getElementById('close-cart').addEventListener('click', closeCart);
   document.getElementById('cart-overlay').addEventListener('click', closeCart);
-  document.getElementById('clear-cart-btn').addEventListener('click', () => {
-    cartState.items = [];
-    syncCartUI();
-  });
-  document.getElementById('cart-checkout-btn').addEventListener('click', () => {
+  document.getElementById('clear-cart-btn').addEventListener('click', () => { cart.items = []; syncCart(); });
+
+  // Cart → place order by email
+  document.getElementById('cart-checkout-btn').addEventListener('click', () => { closeCart(); openPopup(cartToText()); });
+
+  // Cart → WhatsApp
+  document.getElementById('wa-cart-btn').addEventListener('click', () => {
     closeCart();
-    openPopup(cartToOrderText());
+    window.open(`https://wa.me/917000000000?text=${waOrderText()}`, '_blank', 'noopener,noreferrer');
   });
 
-  // All popup triggers
-  document.querySelectorAll('.popup-trigger').forEach(btn =>
-    btn.addEventListener('click', () => openPopup()));
+  // All email-popup triggers
+  document.querySelectorAll('.popup-trigger').forEach(b => b.addEventListener('click', () => openPopup()));
 
-  // Add-to-cart buttons
-  document.querySelectorAll('.add-to-cart-btn').forEach(btn =>
-    btn.addEventListener('click', function () {
-      const { book, author, price, rent } = this.dataset;
-      addToCart(book, author, price, rent);
+  // Add to cart
+  document.querySelectorAll('.add-to-cart-btn').forEach(b =>
+    b.addEventListener('click', function() {
+      addToCart(this.dataset.book, this.dataset.author, this.dataset.price, this.dataset.rent);
     }));
 
-  // Single-book Order buttons → prefill popup
-  document.querySelectorAll('.order-book-btn').forEach(btn =>
-    btn.addEventListener('click', function () {
+  // Single-book Order button → prefill popup
+  document.querySelectorAll('.order-book-btn').forEach(b =>
+    b.addEventListener('click', function() {
       const { book, author, price, rent } = this.dataset;
       openPopup(`1. ${book} by ${author}\n   • Buy: ${price}  |  Rent: ${rent}\n   • Qty: 1`);
     }));
@@ -1220,92 +1317,79 @@ document.addEventListener('DOMContentLoaded', function () {
   // Close popup
   document.getElementById('close-mail-popup').addEventListener('click', closePopup);
   document.getElementById('cancel-order').addEventListener('click', closePopup);
-  document.getElementById('mail-popup').addEventListener('click', function (e) {
-    if (e.target === this) closePopup();
-  });
+  document.getElementById('mail-popup').addEventListener('click', e => { if (e.target === e.currentTarget) closePopup(); });
 
-  // Char counter
-  document.getElementById('book-details').addEventListener('input', function () {
+  // Char counter + clear error
+  document.getElementById('book-details').addEventListener('input', function() {
     document.getElementById('char-count').textContent = this.value.length;
     if (this.value.trim()) clearErr('book-details','books-error');
   });
 
-  // Real-time field validation on blur
-  document.getElementById('customer-name').addEventListener('blur', function () {
+  // Blur validation
+  document.getElementById('customer-name').addEventListener('blur', function() {
     if (this.value.trim().length < 2) showErr('customer-name','name-error','Please enter your full name.');
     else clearErr('customer-name','name-error');
   });
-  document.getElementById('customer-email').addEventListener('blur', function () {
+  document.getElementById('customer-email').addEventListener('blur', function() {
     if (!this.value.trim()) showErr('customer-email','email-error','Email is required.');
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.value)) showErr('customer-email','email-error','Enter a valid email address.');
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.value)) showErr('customer-email','email-error','Enter a valid email.');
     else clearErr('customer-email','email-error');
   });
 
-  // ── FORM SUBMIT — BUG FIX: uses backtick template literals ──
-  document.getElementById('order-form').addEventListener('submit', function (e) {
+  // ── FORM SUBMIT — backtick template literal (BUG FIX) ──
+  document.getElementById('order-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    if (!validateForm()) return;
-
+    if (!validate()) return;
     const name  = document.getElementById('customer-name').value.trim();
     const email = document.getElementById('customer-email').value.trim();
     const phone = document.getElementById('customer-phone').value.trim();
     const books = document.getElementById('book-details').value.trim();
     const notes = document.getElementById('additional-notes').value.trim();
 
-    const subject = encodeURIComponent(`Book Order — ${name}`);
+    const subject = encodeURIComponent(`Book Order Request — ${name}`);
     const body    = encodeURIComponent(
-      `Hello BookHub Team,\n\nI'd like to place the following order:\n\n` +
+      `Hello BookHub India Team,\n\nI'd like to place an order:\n\n` +
       `Name:  ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\n\n` +
-      `═══ BOOKS ═══\n${books}\n\n` +
+      `═══ BOOKS ORDERED ═══\n${books}\n\n` +
       `═══ NOTES ═══\n${notes || 'None'}\n\n` +
       `Thank you!`
     );
 
-    // FIXED: template literal (backticks), not regular quotes
-    window.open(
-      `mailto:thakur.07anurag@gmail.com?subject=${subject}&body=${body}`,
-      '_blank', 'noopener,noreferrer'
-    );
+    // FIXED: template literal (backtick) — not a regular quoted string
+    window.open(`mailto:thakur.07anurag@gmail.com?subject=${subject}&body=${body}`, '_blank', 'noopener,noreferrer');
 
     closePopup();
     this.reset();
     document.getElementById('char-count').textContent = '0';
-
-    // Clear cart after order
-    cartState.items = [];
-    syncCartUI();
-
+    cart.items = [];
+    syncCart();
     document.getElementById('success-message').classList.remove('hidden');
     document.body.style.overflow = 'hidden';
   });
 
   // Close success
-  document.getElementById('close-success').addEventListener('click', function () {
-    document.getElementById('success-message').classList.add('hidden');
+  document.getElementById('close-success').addEventListener('click', function() {
+    this.closest('#success-message').classList.add('hidden');
     document.body.style.overflow = '';
   });
-  document.getElementById('success-message').addEventListener('click', function (e) {
-    if (e.target === this) {
-      this.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
+  document.getElementById('success-message').addEventListener('click', function(e) {
+    if (e.target === this) { this.classList.add('hidden'); document.body.style.overflow = ''; }
   });
 
   // Tab switcher
   document.querySelectorAll('.tab-btn').forEach(btn =>
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function() {
       document.querySelectorAll('.tab-btn').forEach(b => {
-        b.classList.remove('active');
-        b.classList.add('bg-white','text-gray-700');
+        b.classList.remove('active'); b.classList.add('bg-white','text-gray-700');
+        b.setAttribute('aria-selected','false');
       });
-      this.classList.add('active');
-      this.classList.remove('bg-white','text-gray-700');
+      this.classList.add('active'); this.classList.remove('bg-white','text-gray-700');
+      this.setAttribute('aria-selected','true');
       document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
       document.getElementById(this.dataset.tab).classList.remove('hidden');
     }));
 
-  // Init cart UI
-  syncCartUI();
+  syncCart();
 });
 </script>
 </body>
